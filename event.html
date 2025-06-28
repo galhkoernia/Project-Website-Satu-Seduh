@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Satu Seduh</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Playfair+Display:wght@700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        body {
+            background: url('assets/image/satu seduh.png') no-repeat center center/cover;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #d2b48c;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        .menu-label {
+            background-color: #8b5e3c;
+            color: #d0ffb0;
+            padding: 5px 15px;
+            font-weight: bold;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 1.3rem;
+            position: relative;
+            margin: 20px auto;
+            display: block;
+            width: fit-content;
+        }
+
+        .new-tag {
+            color: hotpink;
+            font-weight: bold;
+            font-size: 2.2rem;
+            position: absolute;
+            top: -40px;
+            right: -40px;
+            transform: rotate(-20deg);
+            text-shadow: 2px 2px 5px #00000033;
+        }
+
+        .menu-section {
+            padding: 40px 20px;
+        }
+
+        .product-card {
+            background-color: #ffffffcc;
+            border-radius: 20px;
+            padding: 15px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 100%;
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+            border-radius: 10px;
+        }
+
+        .btn-pesan {
+            background-color: #f78c1c;
+            color: white;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            margin-top: 10px;
+            border: none;
+        }
+
+        .btn-pesan:hover {
+            background-color: #d97311;
+        }
+
+        .dropdown {
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 70px 0;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg shadow-sm" style="background-color: #d2b48c;">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="#">Satu Seduh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/coffee-product.html">Coffee Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/event.html">Event</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/order.html">Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <span class="menu-label">MENU <span class="new-tag">NEW</span></span>
+    </div>
+
+    <section class="menu-section">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center">
+                <!-- Produk 1 -->
+                <div class="col">
+                    <div class="product-card h-100">
+                        <img src="assets/image/americanocoffee.png" alt="Americano" class="product-img">
+                        <div class="dropdown">
+                            <select class="form-select">
+                                <option selected>Pilihan</option>
+                                <option value="small">Ukuran S</option>
+                                <option value="medium">Ukuran M</option>
+                                <option value="large">Ukuran L</option>
+                            </select>
+                        </div>
+                        <button class="btn-pesan w-100">Pesan</button>
+                    </div>
+                </div>
+                <!-- Produk 2 -->
+                <div class="col">
+                    <div class="product-card h-100">
+                        <img src="assets/image/cappucinocoffee.png" alt="Cappuccino" class="product-img">
+                        <div class="dropdown">
+                            <select class="form-select">
+                                <option selected>Pilihan</option>
+                                <option value="small">Ukuran S</option>
+                                <option value="medium">Ukuran M</option>
+                                <option value="large">Ukuran L</option>
+                            </select>
+                        </div>
+                        <button class="btn-pesan w-100">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Produk 3 -->
+                <div class="col">
+                    <div class="product-card h-100">
+                        <img src="assets/image/manualbrewcoffee.png" alt="Manual Brew" class="product-img">
+                        <div class="dropdown">
+                            <select class="form-select">
+                                <option selected>Pilihan</option>
+                                <option value="small">Ukuran S</option>
+                                <option value="medium">Ukuran M</option>
+                                <option value="large">Ukuran L</option>
+                            </select>
+                        </div>
+                        <button class="btn-pesan w-100">Pesan</button>
+                    </div>
+                </div>
+
+                <!-- Produk 4 -->
+                <div class="col">
+                    <div class="product-card h-100">
+                        <img src="/assets/image/mochacoffee.png" alt="Mocha" class="product-img">
+                        <div class="dropdown">
+                            <select class="form-select">
+                                <option selected>Pilihan</option>
+                                <option value="ice">Dingin</option>
+                                <option value="hot">Panas</option>
+                            </select>
+                        </div>
+                        <button class="btn-pesan w-100">Pesan</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center">
+        <p>&copy; 2025 Satu Seduh. All rights reserved.</p>
+        <p>Ikuti kami di Sosial Media</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Satu Seduh - Kedai Kopi</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap"
+        rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/style/style.css">
+
+    <style>
+        body {
+            background-color: transparent;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .navbar {
+            background-color: #d2b48c;
+        }
+
+        #hero {
+            position: relative;
+            background: url('/assets/image/satu seduh.jpg') no-repeat center center / cover;
+            height: 100vh;
+
+        }
+
+        .hero-content h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .product-img {
+            height: 250px;
+            object-fit: contain;
+        }
+
+        .furniture-decor {
+            position: absolute;
+            bottom: 0;
+            z-index: 1;
+            opacity: 0.9;
+        }
+
+        .decor-kursi {
+            position: absolute;
+            right: 5%;
+            width: 450px;
+            z-index: 0;
+        }
+
+        .decor-meja {
+            position: absolute;
+            right: 20%;
+            width: 320px;
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-dark" href="#">Satu Seduh</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/coffee-product.html">Coffee Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/event.html">Event</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/oder.html ">Order</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero Section -->
+    <section id="hero" class="position-relative d-flex align-items-center">
+        <img src="/assets/image/satu seduh.jpg" alt="Logo Background" class="background-logo">
+        <div class="container">
+            <div class="row">
+                <!-- Kolom Kiri: Logo + Tulisan Filosofi -->
+                <div class="col-lg-6 d-flex align-items-center justify-content-center">
+                    <div class="filosofi-box d-flex align-items-center">
+                        <img src="/assets/image/logocoffee.png" alt="Logo Coffee Cup"
+                            class="img-fluid logo-coffee me-3">
+                        <div class="filosofi-text">
+                            <h4 class="mb-0">"Kopi mengajarkan bahwa kepahitan pun bisa dinikmati.<br>
+                                Seperti hidup, tidak selalu manis, tapi tetap bermakna.<br>
+                            </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kolom Kanan -->
+                <div class="col-lg-6"></div>
+            </div>
+        </div>
+
+        <!-- Dekorasi Kursi dan Meja -->
+        <img src="/assets/image/kursi.png" class="decor decor-kursi" alt="Kursi">
+        <img src="/assets/image/mejacoffee.png" class="decor decor-meja" alt="Meja dengan Kopi">
+    </section>
+
+    <!-- Produk Section -->
+    <section class="produk py-5" id="produk">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Daftar Produk Unggulan</h2>
+            <div class="row g-4 justify-content-center">
+
+                <!-- Americano -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm">
+                        <img src="/assets/image/americanocoffee.png" class="card-img-top product-img" alt="Americano">
+                        <div class="card-body">
+                            <h5 class="card-title">Americano</h5>
+                            <p class="card-text">Campuran espresso dengan air panas. Rasanya lebih ringan dari
+                                espresso
+                                tapi tetap memiliki aroma kuat. Cocok untuk yang ingin kopi hitam dengan rasa yang
+                                tidak
+                                terlalu tajam.</p>
+                            <p class="text-muted">Rp18.000</p>
+                            <a href="americano-coffee.html" class="btn btn-outline-dark">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cappuccino -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm">
+                        <img src="/assets/image/cappucinocoffee.png" class="card-img-top product-img" alt="Cappuccino">
+                        <div class="card-body">
+                            <h5 class="card-title">Cappuccino</h5>
+                            <p class="card-text">Minuman kopi berbasis espresso yang terdiri dari
+                                espresso, susu panas (steamed milk), dan busa susu (milk foam).Disajikan dalam
+                                cangkir kecil dengan tekstur creamy dan rasa lembut.</p>
+                            <p class="text-muted">Rp25.000</p>
+                            <a href="cappuccino-coffee.html" class="btn btn-outline-dark">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Manual Brew -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm">
+                        <img src="/assets/image/manualbrewcoffee.png" class="card-img-top product-img"
+                            alt="Manual Brew Coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Manual Brew</h5>
+                            <p class="card-text">Metode penyeduhan kopi tanpa mesin espresso, seperti V60, French
+                                Press,
+                                atau Chemex. Prosesnya lebih personal dan hasil seduhannya cenderung lebih jernih
+                                dan
+                                kompleks secara rasa.</p>
+                            <p class="text-muted">Rp 20.000</p>
+                            <a href="manual-brew-coffee.html" class="btn btn-outline-dark">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mocha Coffe -->
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100 text-center shadow-sm">
+                        <img src="/assets/image/mochacoffee.png" class="card-img-top product-img" alt="Mocha Coffee">
+                        <div class="card-body">
+                            <h5 class="card-title">Mocha Coffee</h5>
+                            <p class="card-text">Mocha adalah minuman kopi yang merupakan perpaduan antara espresso,
+                                susu panas (steamed milk), dan cokelat (biasanya cokelat bubuk atau sirup cokelat)
+                                yang
+                                dicampurkan.</p>
+                            <p class="text-muted">Rp 20.000</p>
+                            <a href="mocha-coffee.html" class="btn btn-outline-dark">Detail</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Filosofi -->
+    <section id="tentang-satuseduh" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Ilustrasi Kiri -->
+                <div class="col-lg-5 text-center mb-4 mb-lg-0">
+                    <img src="/assets/image/barista.png" alt="Ilustrasi Barista" class="img-fluid ilustrasi-barista">
+                </div>
+
+                <!-- Teks Kanan -->
+                <div class="col-lg-7 text-center text-lg-start">
+                    <h2 class="judul-satuseduh">Satu<span>Seduh</span> ☕</h2>
+                    <p class="filosofi">
+                        Dalam satu seduhan, terkandung cerita.<br>
+                        Tentang pertemuan, keheningan, dan makna yang perlahan larut bersama aroma kopi.<br>
+                        Satu Seduh bukan sekadar tempat menikmati kopi, tapi ruang untuk merasa, merenung, dan
+                        menemukan
+                        kembali diri—satu tegukan pada satu waktu.<br>
+                        Karena kami percaya, hal-hal terbaik dalam hidup dimulai dari satu seduh yang tulus.
+                    </p>
+
+                    <a href="https://instagram.com/satu_seduh" class="ig-link mt-3 d-inline-flex align-items-center"
+                        target="_blank">
+                        <img src="/assets/image/ig_icon.png" alt="Instagram" class="me-2" width="24">
+                        <span>@satu_seduh</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container text-center">
+            <p class="mb-1">&copy; 2025 Satu Seduh. All rights reserved.</p>
+            <p class="mb-0">
+                <a href="event.html" class="text-light">Ikuti kami di Sosial Media</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+
+    <script src="/javascript/script.js"></script>
+    <script>
+        const container = document.getElementById("produkContainer");
+
+        dataProduk.forEach(item => {
+            const card = `
+      <div class="col-sm-6 col-md-4 col-lg-3">
+        <div class="card h-100 text-center shadow-sm">
+          <img src="${item.gambar}" class="card-img-top product-img" alt="${item.nama}">
+          <div class="card-body">
+            <h5 class="card-title">${item.nama}</h5>
+            <p class="card-text">${item.deskripsi}</p>
+            <p class="text-muted">${item.harga}</p>
+            <a href="${item.link}" class="btn btn-outline-dark">Detail</a>
+          </div>
+        </div>
+      </div>
+    `;
+            container.innerHTML += card;
+        });
+    </script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>

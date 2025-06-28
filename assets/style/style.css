@@ -1,0 +1,445 @@
+/* == FONT == */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins&display=swap');
+
+/* ===== TAMPILAN SATU SEDUH ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    color: #3c2f2f;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    background-color: #d2b48c;
+    /* warna kopi soft */
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    color: #3c2f2f;
+    transition: 0.3s;
+}
+
+.nav-link {
+    white-space: nowrap;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
+    color: #ffffff;
+}
+
+/* ===== HERO SECTION ===== */
+#hero {
+    position: relative;
+    display: 100vh;
+    background-color: #fdfafa;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+#hero .background-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    opacity: 0;
+    width: 500px;
+    max-width: 90%;
+    z-index: 0;
+}
+
+/*==== Box Filosofi Kopi ==== */
+.filosofi-box {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 12px;
+    padding: 20px 30px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo-coffee {
+    width: 180px;
+    height: auto;
+}
+
+.filosofi-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #3c2f2f;
+    margin: 0;
+}
+
+/* ===== PRODUK ===== */
+.produk h2 {
+    font-family: 'Playfair Display', serif;
+    color: #3c2f2f;
+}
+
+.produk-unggulan-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #5e3c2b;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.produk-unggulan-title::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background-color: #b76e4c;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.produk-unggulan-title {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card-title {
+    font-family: 'Playfair Display', serif;
+    color: #3c2f2f;
+}
+
+.card-text {
+    font-size: 0.95rem;
+    color: #5a4d4d;
+}
+
+.product-img {
+    height: 250px;
+    object-fit: cover;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+/* ===== FURNITURE (KURSI & MEJA) ===== */
+.decor-wrapper {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Perlu Perbaikan */
+
+.decor {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.decor-kursi {
+    position: absolute;
+    right: -15%;
+    width: 620px;
+    z-index: 0;
+}
+
+.decor-meja {
+    position: absolute;
+    right: 5%;
+    width: 400px;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+
+    .decor-kursi,
+    .decor-meja {
+        display: none;
+    }
+
+    .filosofi-box {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+}
+
+/* Perlu Perbaikan */
+
+/* ==== ResponsiF ==== */
+@media (max-width: 768px) {
+    .decor-kursi {
+        width: 240px;
+        right: -70px;
+    }
+
+    .decor-meja {
+        width: 180px;
+        right: 0px;
+    }
+}
+
+/* ==== Section Filosofi ==== */
+#tentang-satuseduh {
+    background-color: #fff;
+    color: #333;
+}
+
+.ilustrasi-barista {
+    max-width: 400px;
+}
+
+.judul-satuseduh {
+    font-family: 'Playfair Display', cursive;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #3c2f2f;
+}
+
+.judul-satuseduh span {
+    text-decoration: underline;
+    text-decoration-color: #d896a7;
+    color: #3c2f2f;
+}
+
+.filosofi {
+    font-size: 1rem;
+    line-height: 1.8;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.ig-link {
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.ig-link:hover {
+    background-color: #000;
+}
+
+.fade-in.opacity-0 {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== FOOTER ===== */
+footer {
+    background-color: #2d2d2d;
+    color: #ffffff;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #d2b48c;
+}
+
+/* === Tampilan Coffee Product === */
+body {
+    background-color: #fff;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ==== Heading animasi ==== */
+h2,
+h3 {
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+/* ==== Animasi fade-in ==== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeInUp 1s ease-out forwards;
+}
+
+/* ===== Background & Layout Section ===== */
+
+.background-only {
+    background: url('/assets/image/satu seduh.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+}
+
+
+/* ==== Gerobak Barista ==== */
+.barista-bg {
+    position: absolute;
+    bottom: -120px;
+    right: 0px;
+    width: 480px;
+    opacity: 0.5;
+    z-index: 0;
+}
+
+/* ==== Lampu Coffee Satu ==== */
+.coffee-satu-bg {
+    position: absolute;
+    bottom: -240px;
+    left: 500px;
+    right: 0px;
+    width: 480px;
+    opacity: 1;
+    z-index: 0;
+}
+
+/* ==== Papan "OPEN" ==== */
+.open-sign {
+    position: absolute;
+    bottom: -110px;
+    left: 10px;
+    width: 240px;
+    transform: rotate(-8deg);
+    opacity: 0.9;
+    z-index: 1;
+}
+
+/* ==== Efek kartu ==== */
+.hover-scale {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.05);
+}
+
+/* ==== Responsif ==== */
+@media (max-width: 768px) {
+    .logo-belakang {
+        width: 250px;
+    }
+
+    .barista-bg {
+        width: 100px;
+        right: 5px;
+        bottom: 10px;
+    }
+
+    .open-sign {
+        width: 60px;
+        left: 5px;
+        bottom: 10px;
+    }
+}
+
+/* ===== ABOUT SECTION ===== */
+/* ==== Ukuran gambar barista ==== */
+.barista-img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* ==== Kotak deskripsi ==== */
+.barista-box {
+    margin-top: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    color: #222;
+    text-align: left;
+    max-height: none;
+    overflow-y: visible;
+}
+
+.col-lg-5:nth-child(2) .baristaa.img {
+    margin-top: 30px;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 768px) {
+    .barista-box {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+}
+
+.social-box {
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 0.95rem;
+    color: #2c2c2c;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.social-box a {
+    color: #6b4f3b;
+    text-decoration: none;
+}
+
+.social-box a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .social-box {
+        text-align: center;
+    }
+}
